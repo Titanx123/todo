@@ -60,8 +60,10 @@ function App() {
           {todoEditing === todo.id ? (          <button onClick={()=> editTodo(todo.id)} className="buttonEdit">Submit Edit</button>
 ) : (          <button onClick={()=> settodoEditing(todo.id)} className="editmain">Edit</button>
 )}
-          </div>)}
-<button onClick={()=>deleteTodo(todo.id)} className="buttonDelete">Delete</button>
+                <button onClick={()=>deleteTodo(todo.id)} className="buttonDelete">Delete</button>
+        </div>
+          
+          )}
     </div>
   );
 }
