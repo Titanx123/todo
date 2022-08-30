@@ -48,7 +48,7 @@ function App() {
       <h1 className='heading-title'>Todo List</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" onChange={(e) => settodo(e.target.value)} value={todo}/>
-        <button type='submit' >AddTodo</button>
+        <button type='submit' className='buttonadd'>AddTodo</button>
         </form>    
         {todos.map((todo)=> <div key={todo.id}>
           {todoEditing === todo.id ? ( <input 
